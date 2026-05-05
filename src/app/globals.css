@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 20% 2%;
+    --foreground: 0 0% 98%;
+    --card: 260 20% 4%;
+    --card-foreground: 0 0% 98%;
+    --popover: 260 20% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 263 87% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 260 20% 8%;
+    --muted-foreground: 260 10% 70%;
+    --accent: 263 87% 62%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 260 20% 10%;
+    --input: 260 20% 10%;
+    --ring: 263 87% 62%;
+    --radius: 2rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { 
+    @apply bg-[#050406] text-foreground font-arabic antialiased selection:bg-primary/30;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(138, 77, 242, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(95, 126, 255, 0.05) 0%, transparent 40%);
+  }
+}
+
+.nova-gradient {
+  @apply bg-gradient-to-br from-[#8A4DF2] via-[#5F7EFF] to-[#00D2FF];
+}
+
+.nova-glow {
+  box-shadow: 0 0 30px rgba(138, 77, 242, 0.4);
+}
+
+.nova-text-glow {
+  text-shadow: 0 0 15px rgba(138, 77, 242, 0.6);
+}
+
+.ultra-glass {
+  @apply bg-white/[0.03] backdrop-blur-2xl border border-white/[0.08] shadow-2xl;
+}
+
+.font-arabic { font-family: 'Cairo', 'Inter', sans-serif; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.02); }
+}
+
+.animate-float { animation: float 5s ease-in-out infinite; }
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { @apply bg-primary/20 rounded-full hover:bg-primary/40; }

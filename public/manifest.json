@@ -1,0 +1,27 @@
+
+{
+  "name": "Nova AI - المساعد المتقدم",
+  "short_name": "Nova AI",
+  "description": "مساعدك الشخصي الذكي المدعوم بالذكاء الاصطناعي للتحكم الصوتي الشامل",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050406",
+  "theme_color": "#8A4DF2",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1675249168121-160dc199e69e?q=80&w=192&h=192&auto=format&fit=crop",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1675249168121-160dc199e69e?q=80&w=512&h=512&auto=format&fit=crop",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities", "ai"]
+}

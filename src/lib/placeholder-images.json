@@ -1,0 +1,16 @@
+{
+  "placeholderImages": [
+    {
+      "id": "app-icon",
+      "description": "Nova AI Professional Logo",
+      "imageUrl": "https://images.unsplash.com/photo-1675249168121-160dc199e69e?q=80&w=1000&auto=format&fit=crop",
+      "imageHint": "artificial intelligence logo"
+    },
+    {
+      "id": "hero-bg",
+      "description": "Nova AI Hero Background",
+      "imageUrl": "https://picsum.photos/seed/nebula/1200/800",
+      "imageHint": "purple nebula space"
+    }
+  ]
+}
